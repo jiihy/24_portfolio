@@ -1,11 +1,15 @@
 <div align="center">
 
-<h2>I'm a turtle but so fast :turtle:...</h2><br>
-
-<h3>:books: Tech Stacks :books:</h3>
+<h2>Welcome !<img src="https://github.com/ABSphreak/ABSphreak/blob/master/gifs/Hi.gif" width="30"> <br></h2>
+ 
+ <br>
+super fast turtle :turtle: <br>
+ <img src="https://img.shields.io/badge/Markup Developer-03C75A?style=for-the-badge&logo=Naver&logoColor=white">
+ <br>
+ 
+<h3>:books: Tech Stacks </h3>
 
 <div>
- <span><img src="https://img.shields.io/badge/Naver-03C75A?style=for-the-badge&logo=Naver&logoColor=white"><span>
  <img src="https://img.shields.io/badge/VS Code-007ACC?style=for-the-badge&logo=Visual Studio Code&logoColor=white">
  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white">
  <img src="https://img.shields.io/badge/Sourcetree-0052CC?style=for-the-badge&logo=Sourcetree&logoColor=white">
@@ -29,17 +33,16 @@
 </div>
 <br>
 
-<h3> :pencil2: Currently Learning :pencil2: </h3>
+<h3> :pencil2: Currently Learning </h3>
 
 <div>
  <img src="https://img.shields.io/badge/JavaScript(ES5)-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white">
  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white">
  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white">
 </div>
-<br><br>
+<br>
 
 ---
-
 Ask me anything <a href="https://github.com/ABSphreak/ABSphreak/issues/new"><b>here</b></a><br>
 or <a href="mailto:jiihy@naver.com"><b>email</b></a> me.
 
