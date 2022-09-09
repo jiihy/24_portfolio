@@ -57,5 +57,6 @@
  or <a href="mailto:jiihy@naver.com"><b>email</b></a> me.
 
  <div><img width="217" alt="flying cat with a pop-tart body gif" src="https://c.tenor.com/lTtlX5xlfmgAAAAC/nyan-cat.gif"></div>
+ thanks!
 
 </div>
