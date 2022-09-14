@@ -10,4 +10,10 @@ function App() {
   );
 }
 
+// spot_bg script 
+const script = document.createElement("script");
+script.src="../animation/bg_script.js"
+script.async=true;
+document.body.appendChild(script);
+
 export default App;
