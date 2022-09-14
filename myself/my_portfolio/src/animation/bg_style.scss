@@ -12,6 +12,7 @@
   border-radius: 900px;
   filter: blur(var(--blur-amount));
   background: var(--color);
+  opacity: 0.7;
 }
 
 .blur:nth-child(1) {
