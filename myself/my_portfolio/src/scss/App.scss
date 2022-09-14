@@ -1,0 +1,9 @@
+@charset 'UTF-8';
+
+@import 'common/base';
+@import 'common/mixin';
+@import 'import/main';
+
+
+// main_spot_bg animation
+@import '../animation/bg_style.scss'
