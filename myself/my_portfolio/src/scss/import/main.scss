@@ -1,3 +1,10 @@
+.inner {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+// spot area
 h2 {
     position: absolute;
     z-index: 10;
@@ -6,4 +13,35 @@ h2 {
 
 p {
     padding-top: 50px;
+}
+
+// main profile
+.main_profile_area {
+    padding: 3em 0;
+    .profile_list {
+        display: flex;
+        li {
+            width: 50%;
+            margin: 0 0.5em;
+            display: list-item;
+            background-color: #ddd;
+            @include border-radius(25px);
+            &:first-child {
+                background-color: #D3CEDF;
+            }
+            &:last-child {
+                background-color: #9CB4CC;
+            }
+
+            @include mobile {
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+    .main_profile_img {
+        display: block;
+        width: 500px;
+        height: 500px;
+    }
 }
