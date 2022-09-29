@@ -13,6 +13,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
+  // https://www.youtube.com/watch?v=whk76VMOlp0
   // https://edidiongasikpo.com/using-gsap-scrolltrigger-plugin-in-react
   let day1 = useRef(null);
   let day2 = useRef(null);
