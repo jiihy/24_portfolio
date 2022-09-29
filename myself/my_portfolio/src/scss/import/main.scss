@@ -54,15 +54,15 @@ p {
                 top: 0;
                 width: 200px;
             }
-            &:first-child img{
-                top: -30px;
+            .day1 {
+                top: 10px;
                 left: 13%;
             }
-            &:nth-child(2) img{
+            .day2 {
                 top: 20px;
                 right: 15%;
             }
-            &:nth-child(3) img{
+            .day3 {
                 top: -10px;
                 left: 20%;
             }
