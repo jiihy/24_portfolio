@@ -33,19 +33,21 @@ p {
         color: #666;
     }
     .profile_list {
+        font-size: 0;
         .profile_item {
             position: relative;
-            margin: 0 0.5em;
+            display: inline-block;
+            width: 30%;
+            margin: 0 1%;
             padding: 50px;
+            font-size: 15px;
             @include border-radius(28px);
             box-shadow: 0 1px 4px 0 rgb(0 0 0 / 6%);
             background-color: #fff;
-            &+.profile_item{
-                margin-top: 50px;
-            }
+            box-sizing: border-box;
             strong{
                 display: block;
-                margin-bottom: 15px;
+                margin-bottom: 3%;
                 font-size: 43px;
                 font-weight: 600;
             }
@@ -56,15 +58,15 @@ p {
             }
             .day1 {
                 top: 10px;
-                left: 13%;
+                left: 0;
             }
             .day2 {
-                top: 20px;
-                right: 15%;
+                top: 30%;
+                right: -3%;
             }
             .day3 {
-                top: -10px;
-                left: 20%;
+                top: -50%;
+                left: 70%;
             }
 
             @include mobile {

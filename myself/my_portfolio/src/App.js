@@ -1,5 +1,6 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { gsap } from "gsap";
+import { TweenMax, Power3 } from "gsap";
 
 // gsap.to(selector명/변수명, 지속시간, {효과 옵션 => css속성: 값})
 
@@ -20,16 +21,12 @@ function App() {
   let day3 = useRef(null);
 
   useEffect(() => {
-    gsap.fromTo(day1,{
-      scrollTrigger:day1,
-      top:'-80px', 
-      duration: 2, 
-      start: 'top center',
-      end: 'bottom top',
-      scrub:true,
-      markers:true,
-    })
-  }, [])
+    TweenMax.from( day1, .8, {
+      y:-80, 
+      ease: Power3.easeOut,
+      pin:true,
+      marker:true,
+    })}, [])
 
   return (
     <div className="App">
@@ -39,17 +36,23 @@ function App() {
             <h3 className='title_text'> <span className='point'>하루 일과</span> 대공개!</h3>
             <ul className='profile_list'>
               <li className='profile_item'>
-                <img src={day01} className="day1"></img>
+                <img src={day01} 
+                ref={el => day1 = el}
+                className="day1"></img>
                 <strong>출근</strong>
                 열심히 씨드머니 벌기
               </li>
               <li className='profile_item'>
-                <img src={day02} className="day2"></img>
+                <img src={day02} 
+                ref={el => day2 = el}
+                className="day2"></img>
                 <strong>퇴근</strong>
                 지구력을 위해 운동하기
               </li>
               <li className='profile_item'>
-                <img src={day03} className="day3"></img>
+                <img src={day03} 
+                ref={el => day3 = el}
+                className="day3"></img>
                 <strong>자기 전</strong>
                 개인 스터디 작업
               </li>
