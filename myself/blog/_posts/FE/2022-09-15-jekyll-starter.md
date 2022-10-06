@@ -1,6 +1,6 @@
 ---
-title: 지킬 블로그 로컬로 실행하여 스타일 커스텀 하기
-categories: [markup]
+title: jekyll serve 오류 해결하고 로컬로 실행하기
+categories: [FE]
 comments: true
 ---
 
@@ -30,8 +30,6 @@ You don't have write permissions for the /Library/Ruby/Gems/2.6.0 directory.
 $xcode-select --install
 xcode-select: error: command line tools are already installed, use "Software Update" to install updates
 ```
-
-----
 
 ### rbenv를 이용해 오류 풀어보기
 `rbenv`를 통해 문제 해결한 케이스가 있어서 차근차근 실행해봤다. 
@@ -94,7 +92,6 @@ $rbenv versions
 - `jekyll serve` 이걸 실행하기 위해 지금까지 달려왔는데 안돌아간다.
 - `bundle exec jekyll serve` 구글링해서 이 명령어를 사용하니 작동된다. 
 
-----
 
 #### 한 줄 소감
 왜 jekyll serve는 안되고 앞에 bundle exec를 덧붙여야만 작동되는지 아직은 모르겠어서 영 찝찝하다. 그래도 일단은 upload 파일로 서버에 올려서 산출물을 확인했던 비효율적인 방법에서 벗어난 것만 해도 행복하다! 조만간 구선생님을 통해 그 이유에 대해 파헤쳐서 추가 포스팅 해야겠다.
