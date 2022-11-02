@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "NanumSquareNeo";
+	font-style: normal;
+	src: url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot");
+	src: url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot?#iefix") format("embedded-opentype"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeo/NanumSquareNeoTTF-aLt.woff") format("woff"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeo/NanumSquareNeoTTF-aLt.woff2") format("woff2"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeo/NanumSquareNeoTTF-aLt.ttf") format("truetype");
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "NanumSquareNeo";
+	font-style: normal;
+	src: url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot");
+	src: url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot?#iefix") format("embedded-opentype"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeo/NanumSquareNeoTTF-bRg.woff") format("woff"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeo/NanumSquareNeoTTF-bRg.woff2") format("woff2"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeo/NanumSquareNeoTTF-bRg.ttf") format("truetype");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "NanumSquareNeo";
+	font-style: normal;
+	src: url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot");
+	src: url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot?#iefix") format("embedded-opentype"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeo/NanumSquareNeoTTF-cBd.woff") format("woff"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeo/NanumSquareNeoTTF-cBd.woff2") format("woff2"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeo/NanumSquareNeoTTF-cBd.ttf") format("truetype");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "NanumSquareNeo";
+	font-style: normal;
+	src: url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeo/NanumSquareNeoTTF-dEb.eot");
+	src: url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeo/NanumSquareNeoTTF-dEb.eot?#iefix") format("embedded-opentype"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeo/NanumSquareNeoTTF-dEb.woff") format("woff"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeo/NanumSquareNeoTTF-dEb.woff2") format("woff2"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeo/NanumSquareNeoTTF-dEb.ttf") format("truetype");
+	font-weight: 800;
+}
+
+@font-face {
+	font-family: "NanumSquareNeo";
+	font-style: normal;
+	src: url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeo/NanumSquareNeoTTF-eHv.eot");
+	src: url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeo/NanumSquareNeoTTF-eHv.eot?#iefix") format("embedded-opentype"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeo/NanumSquareNeoTTF-eHv.woff") format("woff"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeo/NanumSquareNeoTTF-eHv.woff2") format("woff2"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeo/NanumSquareNeoTTF-eHv.ttf") format("truetype");
+	font-weight: 900;
+}
+
+body,
+h1, h2, h3, h4, h5, h6, 
+ul, ol, dl, dd, input{
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    font-family: 'NanumSquareNeo','나눔스퀘어',sans-serif; 
+}
+
+html,body {
+	min-height: 100%;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+em {
+    font-style: normal;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+em {
+    font-style: normal;
+}
+
+a {
+    color:inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+fieldset {
+    border: 0;
+}
+
+button{
+    background: none;
+    border:none;
+    box-shadow:none;
+    border-radius:0; 
+    padding:0; 
+    overflow:visible; 
+    cursor:pointer}
+
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.link {
+    display: block;
+}
+//reset css 영역
