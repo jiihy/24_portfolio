@@ -30,8 +30,8 @@ $(".button").click(function (e) {
     setTimeout(function(){
         $.fn.fullpage.moveTo(2);
         $allShapes.removeClass("stop-shape");
-    },1000)
-    this.off('click')
+    },700)
+    
 });
 
 });

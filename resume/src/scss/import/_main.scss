@@ -2,7 +2,10 @@
 [class^=contents_area] {
     padding: 30px 72px 55px;
     @include tab{
-        padding: 30px 60px;
+        padding: 30px 60px 70px;
+    }
+    @include mobile{
+        padding: 15px 20px 50px;
     }
 
 	.section_title {
@@ -13,6 +16,9 @@
 			font-size: 36px;
             line-height: 43px;
             letter-spacing: 0.6px;
+            @include mobile{
+                font-size: 22px;
+            }
 		}
         p {
             padding-top: 12px;
@@ -21,189 +27,31 @@
             line-height: 25px;
             letter-spacing: 0.2px;
             color: #777;
+            @include mobile{
+                font-size: 16px;
+
+            }
         }
 	}
 
     .section_content {
-        margin-top: 64px;
+        margin: 64px 0 64px;
         @include tab{
             margin-top: 30px;
         }
     }
 }
 
-
-
-// Project List
-.project_list{
-    display: flex;
-    &>li{
-        position: relative;
-        flex: 1;
-        padding: 50px 50px 177px;
-        border: 1px solid #efefef;
-        @include radius(5px);
-        @include box-sizing;
-
-        & + li{
-            margin-left: 10px;
-        }
-
-        .btn {
-            position: absolute;
-            bottom: 50px;
-            width: calc(100% - 100px);
-            height: 48px;
-            padding: 12px 0 11px;
-            letter-spacing: 0.46px;
-            background-color: #b57fb3;
-            color: #fff;
-        }
-    }
-    @include tab{
-        display: block;
-        li+li{
-            margin-left: 0;
-            margin-top: 10px;
-        }
-    }
-
-    .project_title {
-        font-size: 20px;
-        line-height: 24px;
-        letter-spacing: 0.3px;
-    }
-
-    .sub_text {
-        font-weight: normal;
-    }
-
-    .project_subtitle {
-        margin-top: 4px;
-        font-size: 14px;
-        line-height: 1.36;
-    }
-
-    .project_info_box {
-        margin-top: 22px;
-        border-top: 1px solid #efefef;
-
-        .project_info_list {
-            font-size: 16px;
-            line-height: 20px;
-
-            .project_info_col {
-                display: table;
-                margin-top: 24px;
-
-                & + .project_info_col {
-                    margin-top: 20px;
-                }
-
-                &.col_btn{
-                    margin-top: 17px;
-                }
-            }
-            dt {
-                display: table-cell;
-                width: 200px;
-                padding-right: 12px;
-                @include box-sizing;
-                color: #555;
-
-            }
-            dd {
-                display: table-cell;
-                width: 213px;
-                text-align: right;
-            }
-        
-        }
-    }
-}
-
-.content_list {
-    &.detail {
-
-        .content_box {
-            margin-top: 64px;
-
-            &.list_box {
-                max-width: 1040px;
-            }
-            
-            & + .content_box {
-                margin-top: 90px;
-            }
-        }
-        .content_title_area {
-            position: relative;
-            padding-bottom: 19px;
-            border-bottom: 1px solid #efefef;
-            
-            &.noline {
-                border-bottom: none;
-                padding-bottom: 0;
-            }
-            .detail_list_title {
-                line-height: 1.0;
-                letter-spacing: 0.6px;
-
-                &.type_01 {
-                    font-size: 18px;
-                    line-height: 21px;
-                }
-
-                &.type_02 {
-                    font-size: 20px;
-                    line-height: 24px;
-                }
-            }
-        }
-
-        .list_table {
-            th {
-                padding: 16px 30px 16px 0;
-                font-size: 14px;
-                line-height: 25px;
-                
-                &:first-child {
-                    padding: 16px 30px 16px 10px;
-                }
-                &:last-child {
-                    padding: 16px 10px 16px 0;
-                }
-            }
-
-            td {
-                padding: 22px 30px 22px 0;
-                font-size: 14px;
-                line-height: 20px;
-
-                &:first-child {
-                    padding: 16px 30px 16px 10px;
-                }
-                &:last-child {
-                    padding: 16px 10px 16px 0;
-                }
-            }
-        }
-
-        .btn_box {
-            margin-top: 16px;
-        }
-    }
-
-    .section_cont {
-        margin-top: 23px;
-    }
-}
+// LEE JIHYE
 
 .detail_list {
     margin-top: 22px;
     font-size: 14px;
     line-height: 1.43;
     @include clear;
+    @include mobile{
+        font-size: 12px;
+    }
     .detail_list_item {
         display: table;
         margin-top: 18px;
@@ -214,6 +62,9 @@
         padding-right: 50px;
         @include box-sizing;
         color: #555;
+        @include mobile{
+            width: 170px;
+        }
     }
     dd {
         display: table-cell;
@@ -234,3 +85,127 @@
     }
 }
 
+
+
+// Project List
+.project_list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    li{
+        position: relative;
+        width: 48%;
+        padding: 50px 50px 177px;
+        border: 1px solid #efefef;
+        @include radius(5px);
+        @include box-sizing;
+        @include tab{
+            width: 100%;
+        }
+        @include mobile{
+            width: 100%;
+            padding: 40px 35px 140px;
+        }
+
+        &:hover{
+            box-shadow: 0 2px 12px 0 rgba(35,69,101,0.08%);
+        }
+
+
+        .btn {
+            position: absolute;
+            bottom: 50px;
+            width: calc(100% - 100px);
+            padding: 10px 0;
+            font-size: 13px;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 0.46px;
+            background-color: #937DC2;
+            color: #fff;
+            @include mobile{
+                bottom: 40px;
+                width: calc(100% - 70px);
+            }    
+        }
+    }
+    @include tab{
+        display: block;
+        li+li{
+            margin-left: 0;
+            margin-top: 20px;
+        }
+    }
+
+    .project_title {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+        @include mobile{
+            font-size: 15px;
+        }
+    }
+
+    .sub_text {
+        font-weight: normal;
+    }
+
+    .project_subtitle {
+        margin-top: 4px;
+        font-size: 14px;
+        line-height: 1.36;
+    }
+
+    .project_info_box {
+        margin-top: 22px;
+        border-top: 1px solid #efefef;
+
+        .project_info_list {
+            font-size: 16px;
+            line-height: 20px;
+            @include mobile{
+                font-size: 12px;
+            }
+
+            .project_info {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 24px;
+                word-break: keep-all;
+                overflow-wrap: break-word;
+
+                & + .project_info {
+                    margin-top: 20px;
+                }
+
+                &.col_btn{
+                    margin-top: 17px;
+                }
+            }
+            dt {
+                padding-right: 12px;
+                min-width: 80px;
+                @include box-sizing;
+                color: #555;
+
+            }
+            dd {
+                text-align: right;
+            }
+        
+        }
+    }
+}
+
+// tech list
+.tech_list{
+    strong{
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    img {
+        margin: 1px;
+    }
+}
