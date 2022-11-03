@@ -20,4 +20,18 @@ $('.button').click(function (event) {
     event.preventDefault();
 });
 
+$('.resume').fullpage({
+    sectionSelector: '.page',
+    scrollOverflow: true
+});
+
+// pc에 있는 아래 화살표 버튼
+$(".button").click(function (e) {
+    setTimeout(function(){
+        $.fn.fullpage.moveTo(2);
+        $allShapes.removeClass("stop-shape");
+    },1000)
+    this.off('click')
+});
+
 });

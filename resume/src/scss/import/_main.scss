@@ -1,0 +1,236 @@
+/* contents_area */
+[class^=contents_area] {
+    padding: 30px 72px 55px;
+    @include tab{
+        padding: 30px 60px;
+    }
+
+	.section_title {
+        @include clear;
+		h2 {
+            display: inline-block;
+            font-weight: bold;
+			font-size: 36px;
+            line-height: 43px;
+            letter-spacing: 0.6px;
+		}
+        p {
+            padding-top: 12px;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: 0.2px;
+            color: #777;
+        }
+	}
+
+    .section_content {
+        margin-top: 64px;
+        @include tab{
+            margin-top: 30px;
+        }
+    }
+}
+
+
+
+// Project List
+.project_list{
+    display: flex;
+    &>li{
+        position: relative;
+        flex: 1;
+        padding: 50px 50px 177px;
+        border: 1px solid #efefef;
+        @include radius(5px);
+        @include box-sizing;
+
+        & + li{
+            margin-left: 10px;
+        }
+
+        .btn {
+            position: absolute;
+            bottom: 50px;
+            width: calc(100% - 100px);
+            height: 48px;
+            padding: 12px 0 11px;
+            letter-spacing: 0.46px;
+            background-color: #b57fb3;
+            color: #fff;
+        }
+    }
+    @include tab{
+        display: block;
+        li+li{
+            margin-left: 0;
+            margin-top: 10px;
+        }
+    }
+
+    .project_title {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+    }
+
+    .sub_text {
+        font-weight: normal;
+    }
+
+    .project_subtitle {
+        margin-top: 4px;
+        font-size: 14px;
+        line-height: 1.36;
+    }
+
+    .project_info_box {
+        margin-top: 22px;
+        border-top: 1px solid #efefef;
+
+        .project_info_list {
+            font-size: 16px;
+            line-height: 20px;
+
+            .project_info_col {
+                display: table;
+                margin-top: 24px;
+
+                & + .project_info_col {
+                    margin-top: 20px;
+                }
+
+                &.col_btn{
+                    margin-top: 17px;
+                }
+            }
+            dt {
+                display: table-cell;
+                width: 200px;
+                padding-right: 12px;
+                @include box-sizing;
+                color: #555;
+
+            }
+            dd {
+                display: table-cell;
+                width: 213px;
+                text-align: right;
+            }
+        
+        }
+    }
+}
+
+.content_list {
+    &.detail {
+
+        .content_box {
+            margin-top: 64px;
+
+            &.list_box {
+                max-width: 1040px;
+            }
+            
+            & + .content_box {
+                margin-top: 90px;
+            }
+        }
+        .content_title_area {
+            position: relative;
+            padding-bottom: 19px;
+            border-bottom: 1px solid #efefef;
+            
+            &.noline {
+                border-bottom: none;
+                padding-bottom: 0;
+            }
+            .detail_list_title {
+                line-height: 1.0;
+                letter-spacing: 0.6px;
+
+                &.type_01 {
+                    font-size: 18px;
+                    line-height: 21px;
+                }
+
+                &.type_02 {
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        .list_table {
+            th {
+                padding: 16px 30px 16px 0;
+                font-size: 14px;
+                line-height: 25px;
+                
+                &:first-child {
+                    padding: 16px 30px 16px 10px;
+                }
+                &:last-child {
+                    padding: 16px 10px 16px 0;
+                }
+            }
+
+            td {
+                padding: 22px 30px 22px 0;
+                font-size: 14px;
+                line-height: 20px;
+
+                &:first-child {
+                    padding: 16px 30px 16px 10px;
+                }
+                &:last-child {
+                    padding: 16px 10px 16px 0;
+                }
+            }
+        }
+
+        .btn_box {
+            margin-top: 16px;
+        }
+    }
+
+    .section_cont {
+        margin-top: 23px;
+    }
+}
+
+.detail_list {
+    margin-top: 22px;
+    font-size: 14px;
+    line-height: 1.43;
+    @include clear;
+    .detail_list_item {
+        display: table;
+        margin-top: 18px;
+    }
+    dt {
+        display: table-cell;
+        width: 310px;
+        padding-right: 50px;
+        @include box-sizing;
+        color: #555;
+    }
+    dd {
+        display: table-cell;
+        color: #000;
+    }
+
+    .inputbox {
+        width: 231px;
+    }
+
+    .emph {
+        font-size: 15px;
+        &_line {
+            color: #949494;
+            text-decoration: line-through;
+        
+        }
+    }
+}
+

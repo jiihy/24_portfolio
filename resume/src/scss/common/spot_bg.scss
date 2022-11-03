@@ -9,14 +9,14 @@ body {
     margin: 0;
 }
 
-.container {
+.spot_box {
     width: 100%;
     height: 100vh;
     display: block;
     overflow: hidden;
-    background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+    background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%,#fff);
   
-    .inner-container {
+    .inner_deco {
         width: 90%;
         margin: 0 auto;
     }
