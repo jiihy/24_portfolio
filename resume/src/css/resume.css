@@ -161,16 +161,6 @@ span[class*="label"] + .label_gray_btn {
 	}
 }
 
-.label_green {
-	color: #08bf5b;
-	background-color: rgba(8, 191, 91, 0.1);
-}
-
-.label_blue {
-	color: #2396e2;
-	background-color: rgba(35, 150, 226, 0.1);
-}
-
 /* header */
 .header {
 	position: sticky;
@@ -200,7 +190,7 @@ span[class*="label"] + .label_gray_btn {
 
 .header_inner .header_logo {
 	float: left;
-	margin-left: 58px;
+	margin-left: 68px;
 	font-size: 20px;
 	font-weight: 900;
 }
@@ -208,7 +198,7 @@ span[class*="label"] + .label_gray_btn {
 @media (max-width: 767px) {
 	.header_inner .header_logo {
 		margin-top: 6px;
-		margin-left: 40px;
+		margin-left: 48px;
 		font-size: 12px;
 	}
 }
@@ -474,6 +464,15 @@ body {
 	display: block;
 	overflow: hidden;
 	background-image: linear-gradient(135deg, #645CAA 0%, #A084CA 50%, #EBC7E8 100%);
+}
+
+//IOS only (Scss 싱크 맞추기)
+.spot_box @supports (-webkit-touch-callout: none){
+	height: -webkit-fill-available;
+}
+
+.fp-tableCell {
+	overflow: hidden;
 }
 
 .spot_box .inner_deco {
