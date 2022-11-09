@@ -48,6 +48,7 @@ span[class*="label"] {
 .header {
 	position: sticky;
 	top: 0;
+	left: 0;
 	z-index: 100;
     grid-column: 1 / span 3;
 	background-color: #fff;

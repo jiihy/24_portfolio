@@ -20,18 +20,40 @@ $('.button').click(function (event) {
     event.preventDefault();
 });
 
-$('.resume').fullpage({
-    sectionSelector: '.page',
-    scrollOverflow: true
-});
 
-// pc에 있는 아래 화살표 버튼
-$(".button").click(function (e) {
-    setTimeout(function(){
-        $.fn.fullpage.moveTo(2);
-        $allShapes.removeClass("stop-shape");
-    },700)
-    
-});
 
 });
+
+// 
+
+// scroll
+var scrollTopRatio;
+function getScrollTop() {
+    if (document.scrollingElement && document.scrollingElement.scrollHeight) {
+        scrollTopRatio = $(document).height() / document.scrollingElement.scrollHeight;
+    } else {
+        scrollTopRatio = 1;
+    }
+    return $(window).scrollTop() * scrollTopRatio;
+}
+
+// motion
+function aniChecker() {
+    $('.motion, .underline').each(function(index){
+        var pos = $(this).offset(), wY = getScrollTop(), wH = $(window).height(), oH = $(this).outerHeight();
+        var posTop = pos.top;
+        if (posTop >= wY && oH + posTop <= wY + wH ){
+            $(this).addClass('on');
+        } else if ((posTop <= wY && posTop + oH > wY) || (posTop  >= wY && posTop  <= wY + wH - 200)){
+            $(this).addClass('on');
+        }
+    });
+}
+
+$(window).scroll(function(){
+    aniChecker();
+});
+
+
+// spot click
+

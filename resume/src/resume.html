@@ -12,7 +12,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/resume.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.12/fullpage.css">
     <link rel="shortcut icon" href="img/cat.png">
     <title>resume</title>
 </head>
@@ -94,8 +93,8 @@
                         <p>Work Portfolio</p>
                     </div>
 
-                    <div class="section_content list_box">
-                        <dl class="detail_list">
+                    <div class="section_content">
+                        <dl class="detail_list motion">
                             <div class="detail_list_item">
                                 <dt>이름 Name</dt>
                                 <dd>이지혜 LEE JIHYE</dd>
@@ -142,7 +141,7 @@
 
                     <div class="section_content">
                         <ul class="project_list">
-                            <li>
+                            <li class="motion">
                                 <h4 class="project_title">네이버 웹툰 공식 홈페이지</h4>
                                 <div class="project_info_box">
                                     <dl class="project_info_list">
@@ -174,7 +173,7 @@
                                 
                                 <a href="https://webtoonscorp.com/" target="_blank" class="btn">View the Page</a>                       
                             </li>
-                            <li>
+                            <li class="motion">
                                 <h4 class="project_title">네이버 쇼핑 정기구독 이벤트 페이지</h4>
                                 <div class="project_info_box">
                                     <dl class="project_info_list">
@@ -205,7 +204,7 @@
                                 </div>
                                 <a href="https://campaign.naver.com/shopping_subscribe/" target="_blank" class="btn">View the Page</a>                       
                             </li>
-                            <li>
+                            <li class="motion">
                                 <h4 class="project_title">LINEPAY PayShop(TW)</h4>
                                 <div class="project_info_box">
                                     <dl class="project_info_list">
@@ -237,7 +236,7 @@
                                 </div>
                                 <a class="btn" style="cursor:default;">내부 보안 링크</a>                       
                             </li>
-                            <li>
+                            <li class="motion">
                                 <h4 class="project_title">네이버 해피빈 이벤트 프로모션</h4>
                                 <div class="project_info_box">
                                     <dl class="project_info_list">
@@ -267,7 +266,7 @@
                                 </div>
                                 <a href="https://happybean.naver.com/volunteer/event/19" target="_blank" class="btn">View the Page</a>                       
                             </li>
-                            <li>
+                            <li class="motion">
                                 <h4 class="project_title">네이버 클라우드</h4>
                                 <div class="project_info_box">
                                     <dl class="project_info_list">
@@ -297,7 +296,7 @@
                                 </div>
                                 <a class="btn" style="cursor:default;">내부 보안 링크</a>                       
                             </li>
-                            <li>
+                            <li class="motion">
                                 <h4 class="project_title">네이버 사내 서비스</h4>
                                 <div class="project_info_box">
                                     <dl class="project_info_list">
@@ -335,7 +334,7 @@
                         <p>Currently Learning</p>
                     </div>
                     <div class="section_content">
-                        <div class="toy_project">
+                        <div class="toy_project motion">
                             <span class="label">React</span>
                             <span class="label">HTML</span>
                             <span class="label">SCSS</span>
@@ -388,7 +387,7 @@
                         <p>Currently Learning</p>
                     </div>
                     <div class="section_content">
-                        <div class="tech_list">
+                        <div class="tech_list motion">
                             <div class="tech_link">
                                 <a href="https://jiihy.github.io/blog_posting/" target="_blank" class="link">끄적끄적... Tech Blog 바로가기</a>
                             </div>
@@ -445,7 +444,18 @@
     </div> 
 </body>
 <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.js"></script>
 <script type="text/javascript" src="js/spot_bg.js"></script>
+<script>
+const btnArr = document.getElementsByID('btn_scroll_down');
+
+for(let i = 0; i < btnArr.length; i++){
+
+  btnArr[i].addEventListener('click',function(e){
+    e.preventDefault();
+    document.querySelector('.header' + (i + 1)).scrollIntoView(true);
+  });
+
+}
+
+</script>
 </html>
