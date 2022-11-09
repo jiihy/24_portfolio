@@ -52,7 +52,7 @@
  <br><br>
 
  ---
- Ask me anything <a href="https://github.com/ABSphreak/ABSphreak/issues/new"><b>here</b></a><br>
+ Ask me anything <a href="https://github.com/jiihy/22_portfolio/issues/new"><b>here</b></a><br>
  or <a href="mailto:jiihy@naver.com"><b>email</b></a> me.
 
  <div><img width="217" alt="flying cat with a pop-tart body gif" src="https://c.tenor.com/lTtlX5xlfmgAAAAC/nyan-cat.gif"></div>
