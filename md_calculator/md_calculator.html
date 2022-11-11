@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>md 계산기</title>
+    <link rel="stylesheet" href="src/css/md_calculator.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="content_area">
+            <div class="calculator">
+                <h2>md 계산기</h2>
+                <p class="user_input" id="userInput">작업시간을  입력해주세요!</p>
+                <strong class="result" id="result"><span class="blind">md 반환창</span></strong>
+                <div class="input_box">
+                    <input id="userTypeH" type="number" onchange="printName()" placeholder="시간">
+                    <input id="userTypeM" type="number" onchange="printName()" placeholder="분">
+                </div>
+            </div>
+            <span class="set_md">1분 = 0.002083md</span>
+        </div>
+    </div>
+</body>
+<script>
+    const md = 0.00208333333;
+    const h = '시간 '
+    const m = '분'
+
+    function printName(){
+        let userTypeH = document.getElementById('userTypeH').value; //input창의 값을 가져옴
+        let userTypeM = document.getElementById('userTypeM').value; 
+        let userTypeT = Number(userTypeH)*60 + Number(userTypeM); //userTypeN의 숫자 Total 계산
+        let calculator = (md * userTypeT).toFixed(2);
+
+        let userMd = calculator + ' md';
+        document.getElementById('userInput').innerText = (userTypeH >= 1?userTypeH+h:'') + (userTypeM >= 1?userTypeM+m:'');
+        document.getElementById('result').innerText = userMd;
+    }
+</script>
+</html>
