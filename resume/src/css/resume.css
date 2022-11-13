@@ -126,13 +126,6 @@ body {
 	min-height: 100vh;
 }
 
-/* scss싱크맞추기 메모 */
-.iframe_box{
-	position: relative;
-	z-index: -1
-}
-
-
 @media (max-width: 1150px) {
 	.container {
 		grid-template-columns: 1fr;
