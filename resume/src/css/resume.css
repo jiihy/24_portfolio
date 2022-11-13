@@ -1,11 +1,4 @@
 @charset "UTF-8";
-
-/* scss싱크맞추기 메모 */
-.iframe_box{
-	position: relative;
-	z-index: -1
-}
-
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css");
 @import url("https://fonts.googleapis.com/css?family=Shrikhand");
 @import url("https://fonts.googleapis.com/css?family=Rubik:400");
@@ -132,6 +125,13 @@ body {
 	grid-template-rows: max-content;
 	min-height: 100vh;
 }
+
+/* scss싱크맞추기 메모 */
+.iframe_box{
+	position: relative;
+	z-index: -1
+}
+
 
 @media (max-width: 1150px) {
 	.container {
