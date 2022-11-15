@@ -1,0 +1,34 @@
+
+// Sprites Map
+$sp_pc: (
+	name: 'sp_pc',
+	width: 106px,
+	height: 106px,
+	image: '../img/sp_pc.png',
+	sprites: (
+	ico_list_b: (
+			offset-x: 0px,
+			offset-y: 0px,
+			width: 48px,
+			height: 48px,
+		),
+		ico_list_w: (
+			offset-x: -58px,
+			offset-y: 0px,
+			width: 48px,
+			height: 48px,
+		),
+		ico_study_b: (
+			offset-x: 0px,
+			offset-y: -58px,
+			width: 48px,
+			height: 48px,
+		),
+		ico_study_w: (
+			offset-x: -58px,
+			offset-y: -58px,
+			width: 48px,
+			height: 48px,
+		),
+	)
+);

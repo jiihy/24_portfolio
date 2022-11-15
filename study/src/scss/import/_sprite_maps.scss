@@ -1,0 +1,9 @@
+
+  
+// Sprites Map import
+@import "../sprite/sp_mo";
+@import "../sprite/sp_pc";
+
+// Sprites Map List
+$map_list: $sp_mo, $sp_pc, ;
+$ratio: 2;

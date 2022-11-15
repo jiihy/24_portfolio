@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/study.css">
+    <title>study</title>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="header_inner">
+                <h1 class="logo"><a href="#">logo</a></h1>
+                <ul class="address_list">
+                    <li><a href="#">jiihy@naver.com</a></li>
+                    <li><a href="#">English</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="container">
+            <div class="snb">
+                <div class="snb_box">
+                    <h2>Product</h2>
+                    <ul>
+                        <li><a href="#" onclick="click_01()">Product List</a></li>
+                        <li><a href="#" onclick="click_02()">Voucher Management</a></li>
+                    </ul>
+                </div>
+                <div class="snb_box">
+                    <h2>History</h2>
+                    <ul>
+                        <li><a href="#">Order Management</a></li>
+                        <li><a href="#">Voucher Transaction</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content_wrap">
+                <div class="content_list vc_list">
+                    <div class="title_box">
+                        <h3>Order Details</h3>
+                        <strong>Manage your product and order status.</strong>
+                    </div>
+                    <div class="vc_box">
+                        <strong>Basic Details</strong>
+                        <dl>
+                            <div class="dl_vc_box">
+                                <dt>Order Number</dt>
+                                <dd>LPTW22020103</dd>
+                            </div>
+                            <div class="dl_vc_box">
+                                <dt>Order Number</dt>
+                                <dd>LPTW22020103</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="content_list active product_list">
+                    <div class="title_box">
+                        <h3>NGO Payshop Seller Center</h3>
+                        <strong>Manage your product and order status.</strong>
+                    </div>
+                    <ul class="work_list">
+                        <li class="work_item">
+                            <strong>Donation Status (Last 4 days)</strong>
+                            <dl>
+                                <div class="dl_work_box">
+                                    <dt>New Donation</dt>
+                                    <dd>100</dd>
+                                </div>
+                                <div class="dl_work_box">
+                                    <dt>Cancellation</dt>
+                                    <dd>5</dd>
+                                </div>
+                            </dl>
+                            <a href="#" class="work_link">View Page<span class="blind">링크 바로가기</span></a>
+                        </li>
+                        <li class="work_item">
+                            <strong>Donation Status (Last 4 days)</strong>
+                            <dl>
+                                <div class="dl_work_box">
+                                    <dt>New Donation</dt>
+                                    <dd>100</dd>
+                                </div>
+                                <div class="dl_work_box">
+                                    <dt>Cancellation</dt>
+                                    <dd>5</dd>
+                                </div>
+                            </dl>
+                            <a href="#" class="work_link">View Page<span class="blind">링크 바로가기</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let vc_list = document.querySelector('.vc_list');
+    let product_list = document.querySelector('.product_list');
+
+    function click_01(){
+        vc_list.classList.add('active');
+
+        product_list.classList.remove('active');
+    }
+    function click_02(){
+        product_list.classList.add('active');
+
+        vc_list.classList.remove('active');
+    }
+</script>
+</html>
