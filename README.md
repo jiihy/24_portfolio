@@ -22,7 +22,7 @@
 
  <div>
   <img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jQuery&logoColor=white">
-  <img src="https://img.shields.io/badge/JavaScript(ES3)-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white">
+  <img src="https://img.shields.io/badge/JavaScript(ES6)-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white">
  </div>
  <br>
 
