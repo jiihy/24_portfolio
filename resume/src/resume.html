@@ -55,7 +55,7 @@
                     </ul>
                     <!-- //gnb -->
                 </div>
-                    </div>
+            </div>
             <!-- //header -->
 
             <!-- snb -->
@@ -64,10 +64,10 @@
                     <h3 class="snb_title">Work Portfolio</h3>
                     <ul class="nav_snb">
                         <li>
-                            <a href="#"><span class="icon_menu_03"></span><spam class="snb_menu_txt">C.V.</span></a>
+                            <button class="active" onclick="click_01()"><span class="icon_menu_03"></span><span class="snb_menu_txt">C.V.</span></button>
                         </li>
                         <li>
-                            <a href="#" class="active"><span class="icon_menu_01"></span><spam class="snb_menu_txt">Project List</span></a>
+                            <button onclick="click_02()"><span class="icon_menu_01"></span><span class="snb_menu_txt">Project List</span></button>
                         </li>
                     </ul>
                 </div>
@@ -75,25 +75,23 @@
                     <h3 class="snb_title">Currently Learning</h3>
                     <ul class="nav_snb">
                         <li>
-                            <a href="#"><span class="icon_menu_04"></span><spam class="snb_menu_txt">Team Project</span></a>
+                            <button onclick="click_03()"><span class="icon_menu_04"></span><span class="snb_menu_txt">Team Project</span></button>
                         </li>
                         <li>
-                            <a href="#"><span class="icon_menu_02"></span><spam class="snb_menu_txt">Tech Blog</span></a>
+                            <button onclick="click_04()"><span class="icon_menu_02"></span><span class="snb_menu_txt">Tech Blog</span></button>
                         </li>
                     </ul>
                 </div>    
             </div>
             <!-- //snb -->
     
-            <!-- content -->
-            <div id="content" class="content">
-                <!-- contents_area -->
-                <div class="contents_area">
+            <!-- contents_area -->
+            <div class="contents_area">
+                <div class="content vc_list active">
                     <div class="section_title">
                         <h2>C.V.</h2>
                         <p>Work Portfolio</p>
                     </div>
-
                     <div class="section_content list_box">
                         <dl class="detail_list">
                             <div class="detail_list_item">
@@ -125,7 +123,7 @@
                                     (주)인컴즈 21.11.08~<span style="color: #9f9f9f;">재직중</span>
                                 </dd>
                             </div>
-                             <div class="detail_list_item">
+                                <div class="detail_list_item">
                                 <dt>블로그 Tech Blog</dt>
                                 <dd>
                                     <a href="https://jiihy.github.io/blog_posting/" target="_blank" style="border-bottom: 1px solid #ddd;" class="link">바로가기</a>
@@ -133,13 +131,13 @@
                             </div>
                         </dl>
                     </div>
+                </div>
 
-
+                <div class="content project_list">
                     <div class="section_title">
                         <h2>Project List</h2>
                         <p>Work Portfolio</p>
                     </div>
-
                     <div class="section_content">
                         <ul class="project_list">
                             <li>
@@ -329,7 +327,9 @@
                             </li>
                         </ul>
                     </div>
+                </div>
 
+                <div class="content team_list">
                     <div class="section_title">
                         <h2>Team Project</h2>
                         <p>Currently Learning</p>
@@ -384,7 +384,9 @@
                             <p style="text-align:center">직접 플레이해보세요!</p>
                         </div>
                     </div>
+                </div>
 
+                <div class="content blog_list">
                     <div class="section_title">
                         <h2>Tech Blog</h2>
                         <p>Currently Learning</p>
@@ -438,9 +440,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- //contents_area -->
             </div>
-            <!-- //content -->
+            <!-- //contents_area -->
         </div>
         </div>
         <!-- //container -->
@@ -450,4 +451,39 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.js"></script>
 <script type="text/javascript" src="js/spot_bg.js"></script>
+<script>
+    let vc_list = document.querySelector('.vc_list');
+    let project_list = document.querySelector('.project_list');
+    let team_list = document.querySelector('.team_list');
+    let blog_list = document.querySelector('.blog_list');
+
+    function click_01(){
+        vc_list.classList.add('active');
+
+        project_list.classList.remove('active');
+        team_list.classList.remove('active');
+        blog_list.classList.remove('active');
+    }
+    function click_02(){
+        project_list.classList.add('active');
+
+        vc_list.classList.remove('active');
+        team_list.classList.remove('active');
+        blog_list.classList.remove('active');
+    }
+    function click_03(){
+        team_list.classList.add('active');
+
+        vc_list.classList.remove('active');
+        project_list.classList.remove('active');
+        blog_list.classList.remove('active');
+    }
+    function click_04(){
+        blog_list.classList.add('active');
+
+        vc_list.classList.remove('active');
+        project_list.classList.remove('active');
+        team_list.classList.remove('active');
+    }
+</script>
 </html>

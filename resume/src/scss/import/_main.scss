@@ -1,6 +1,6 @@
 /* contents_area */
 [class^=contents_area] {
-    padding: 30px 72px 55px;
+    padding: 60px 72px 55px;
     @include tab{
         padding: 30px 60px 70px;
     }
@@ -41,6 +41,26 @@
         }
     }
 }
+
+.content{
+    display: none;
+    &.active {
+        display: block;
+    }
+    &.project_list{
+        display: none;
+        &.active{
+            display: flex;
+        }
+    }
+    @include tab{
+        display: block;
+        &.project_list{
+            display: flex;
+        }
+    }
+}
+
 
 // VI
 
