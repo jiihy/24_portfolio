@@ -87,7 +87,8 @@ button{
     border-radius:0; 
     padding:0; 
     overflow:visible; 
-    cursor:pointer}
+    cursor:pointer;
+}
 
 
 .blind {
@@ -103,7 +104,3 @@ button{
     display: block;
 }
 //reset css 영역
-
-.fp-watermark{
-    display: none !important;
-}

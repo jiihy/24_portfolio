@@ -21,11 +21,10 @@ body {
 
 //라벨
 span[class*="label"] {
-	display: inline;
+	display: inline-block;
 	margin: 2px;
-	padding: 3px 5px 2px;
+	padding: 0px 5px;
 	min-width: 38px;
-	height: 24px;
 	font-size: 12px;
 	font-weight: 600;
 	line-height: 20px;
@@ -212,7 +211,7 @@ span[class*="label"] {
 	li + li {
         margin-top: 16px;
 	}
-	a {
+	button {
 		display: inline-block;
 		position: relative;
 		font-size: 15px;
@@ -221,16 +220,16 @@ span[class*="label"] {
 		&.active {
 			font-weight: bold;
 			.icon_menu_01 {
-				@include get-sprite(icon-snb-productlist-black, $sp_application);
-			}
-			.icon_menu_02{
-				@include get-sprite(icon-snb-registration-black, $sp_application);
-			}
-			.icon_menu_03{
 				@include get-sprite(icon-snb-create-black, $sp_application);
 			}
-			.icon_menu_04{
+			.icon_menu_02{
+				@include get-sprite(icon-snb-productlist-black, $sp_application);
+			}
+			.icon_menu_03{
 				@include get-sprite(icon-snb-payment-black, $sp_application);
+			}
+			.icon_menu_04{
+				@include get-sprite(icon-snb-registration-black, $sp_application);
 			}
 		}
 	}
@@ -243,16 +242,16 @@ span[class*="label"] {
 		margin-right: 6px ;
 	} 
 	.icon_menu_01{
-		@include get-sprite(icon-snb-productlist, $sp_application);
-	}
-	.icon_menu_02{
-		@include get-sprite(icon-snb-registration, $sp_application);
-	}
-	.icon_menu_03{
 		@include get-sprite(icon-snb-create, $sp_application);
 	}
-	.icon_menu_04{
+	.icon_menu_02{
+		@include get-sprite(icon-snb-productlist, $sp_application);
+	}
+	.icon_menu_03{
 		@include get-sprite(icon-snb-payment, $sp_application);
+	}
+	.icon_menu_04{
+		@include get-sprite(icon-snb-registration, $sp_application);
 	}
 	.snb_menu_txt {
 		display: inline-block;
@@ -267,3 +266,11 @@ span[class*="label"] {
 	}
 }
 
+
+.c_gray{
+    color: #9f9f9f;
+}
+
+.link{
+    border-bottom: 1px solid #ddd;
+}

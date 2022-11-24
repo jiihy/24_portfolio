@@ -25,7 +25,7 @@
                 <div class="shape">
                     <div class="title">
                         <h1>For the Endless Growth</h1> 
-                        <a class="button" id="btn_scroll_down" href="#" this.onclick='';>Open this resume</a>
+                        <button class="button" id="btn_scroll_down">Open this resume</button>
                     </div>
                 </div>
             </div>
@@ -45,17 +45,17 @@
         
                     <!-- gnb -->
                     <ul id="gnb" class="gnb">
-                    <li class="gnb_item gnb_mail">
-                        <span class="gnb_text">jiihy@naver.com</span>
-                        <a href="mailto:jiihy@naver.com" class="gnb_btn">Email me</a>
-                    </li>
-                    <li class="gnb_item">
-                        <a href="https://github.com/jiihy" target="_blank" class="github_btn">Github</a>
-                    </li>
+                        <li class="gnb_item gnb_mail">
+                            <span class="gnb_text">jiihy@naver.com</span>
+                            <a href="mailto:jiihy@naver.com" class="gnb_btn">Email me</a>
+                        </li>
+                        <li class="gnb_item">
+                            <a href="https://github.com/jiihy" target="_blank" class="github_btn">Github</a>
+                        </li>
                     </ul>
                     <!-- //gnb -->
                 </div>
-                    </div>
+            </div>
             <!-- //header -->
 
             <!-- snb -->
@@ -64,10 +64,10 @@
                     <h3 class="snb_title">Work Portfolio</h3>
                     <ul class="nav_snb">
                         <li>
-                            <a href="#"><span class="icon_menu_03"></span><spam class="snb_menu_txt">C.V.</span></a>
+                            <button id="btn01"><span class="icon_menu_01"></span><span class="snb_menu_txt">C.V.</span></button>
                         </li>
                         <li>
-                            <a href="#" class="active"><span class="icon_menu_01"></span><spam class="snb_menu_txt">Project List</span></a>
+                            <button id="btn02" class="active"><span class="icon_menu_02"></span><span class="snb_menu_txt">Project List</span></button>
                         </li>
                     </ul>
                 </div>
@@ -75,10 +75,10 @@
                     <h3 class="snb_title">Currently Learning</h3>
                     <ul class="nav_snb">
                         <li>
-                            <a href="#"><span class="icon_menu_04"></span><spam class="snb_menu_txt">Team Project</span></a>
+                            <button id="btn03"><span class="icon_menu_03"></span><span class="snb_menu_txt">Team Project</span></button>
                         </li>
                         <li>
-                            <a href="#"><span class="icon_menu_02"></span><spam class="snb_menu_txt">Tech Blog</span></a>
+                            <button id="btn04"><span class="icon_menu_04"></span><span class="snb_menu_txt">Tech Blog</span></button>
                         </li>
                     </ul>
                 </div>    
@@ -89,358 +89,365 @@
             <div id="content" class="content">
                 <!-- contents_area -->
                 <div class="contents_area">
-                    <div class="section_title">
-                        <h2>C.V.</h2>
-                        <p>Work Portfolio</p>
-                    </div>
-
-                    <div class="section_content list_box">
-                        <dl class="detail_list">
-                            <div class="detail_list_item">
-                                <dt>이름 Name</dt>
-                                <dd>이지혜 LEE JIHYE</dd>
-                            </div>
-                            <div class="detail_list_item">
-                                <dt>생년월일 Birth</dt>
-                                <dd>1996.07.12</dd>
-                            </div>
-                            <div class="detail_list_item">
-                                <dt>이메일 Email</dt>
-                                <dd>jiihy@naver.com</dd>
-                            </div>
-                            <div class="detail_list_item">
-                                <dt>연락처 Phone</dt>
-                                <dd>82)10.3549.0816</dd>
-                            </div>
-                            <div class="detail_list_item">
-                                <dt>최종 학력 Education</dt>
-                                <dd>
-                                    한성대학교 경영학부 <br>
-                                    Univ. Hansung Business
-                                </dd>
-                            </div>
-                            <div class="detail_list_item">
-                                <dt>경력사항 Experience</dt>
-                                <dd>
-                                    (주)인컴즈 21.11.08~<span style="color: #9f9f9f;">재직중</span>
-                                </dd>
-                            </div>
-                            <div class="detail_list_item">
-                                <dt>블로그 Tech Blog</dt>
-                                <dd>
-                                    <a href="https://jiihy.github.io/blog_posting/" target="_blank" style="border-bottom: 1px solid #ddd;" class="link">개인 기술 블로그</a>
-                                </dd>
-                            </div>
-                            <div class="detail_list_item">
-                                <dt>성과 Good work</dt>
-                                <dd>
-                                    <a href="https://jiihy.github.io/22_portfolio/md_calculator/md_calculator.html" target="_blank" style="border-bottom: 1px solid #ddd;" class="link"> 일정 산출 계산기</a>
-                                </dd>
-                            </div>
-                        </dl>
-                    </div>
-
-
-                    <div class="section_title">
-                        <h2>Project List</h2>
-                        <p>Work Portfolio</p>
-                    </div>
-
-                    <div class="section_content">
-                        <ul class="project_list">
-                            <li>
-                                <h4 class="project_title">네이버 웹툰 공식 홈페이지</h4>
-                                <div class="project_info_box">
-                                    <dl class="project_info_list">
-                                        <div class="project_info">
-                                            <dt>스펙</dt>
-                                            <dd>PC / tab / mo 적응형</dd>
-                                        </div>
-                                        <div class="project_info">
-                                            <dt>주요 참여</dt>
-                                            <dd>40% - MEDIA 카테고리 신설 / CAREERS 중심 전체 마크업 관리</dd>
-                                        </div>
-                                        <div class="project_info">
-                                            <dt>사용 기술</dt>
-                                            <dd>
-                                                <span class="label">HTML</span>
-                                                <span class="label">SCSS</span>
-                                                <span class="label">Gulp</span>
-                                                <span class="label">Jquery</span>
-                                                <span class="label">Zeplin</span>
-                                                <span class="label">Github</span>
-                                            </dd>
-                                        </div>
-                                        <div class="project_info">
-                                            <dt>획득 역량</dt>
-                                            <dd>Include 방식의 대규모 공통 파일 버전 관리 역량 강화</dd>
-                                        </div>
-                                    </dl>
-                                </div>
-                                
-                                <a href="https://webtoonscorp.com/" target="_blank" class="btn">View the Page</a>                       
-                            </li>
-                            <li>
-                                <h4 class="project_title">네이버 쇼핑 정기구독 이벤트 페이지</h4>
-                                <div class="project_info_box">
-                                    <dl class="project_info_list">
-                                        <div class="project_info">
-                                            <dt>스펙</dt>
-                                            <dd>반응형</dd>
-                                        </div>
-                                        <div class="project_info">
-                                            <dt>주요 참여</dt>
-                                            <dd>100%</dd>
-                                        </div>
-                                        <div class="project_info">
-                                            <dt>사용 기술</dt>
-                                            <dd>
-                                                <span class="label">HTML</span>
-                                                <span class="label">SCSS</span>
-                                                <span class="label">Gulp</span>
-                                                <span class="label">Slick</span>
-                                                <span class="label">Figma</span>
-                                                <span class="label">Github</span>
-                                            </dd>
-                                        </div>
-                                        <div class="project_info">
-                                            <dt>획득 역량</dt>
-                                            <dd>사용자 니즈와 기획 의도 파악 및 커뮤니케이션</dd>
-                                        </div>
-                                    </dl>
-                                </div>
-                                <a href="https://campaign.naver.com/shopping_subscribe/" target="_blank" class="btn">View the Page</a>                       
-                            </li>
-                            <li>
-                                <h4 class="project_title">LINEPAY PayShop(TW)</h4>
-                                <div class="project_info_box">
-                                    <dl class="project_info_list">
-                                        <div class="project_info">
-                                            <dt>스펙</dt>
-                                            <dd>PC / 대만 실서비스</dd>
-                                        </div>
-                                        <div class="project_info">
-                                            <dt>주요 참여</dt>
-                                            <dd>100%</dd>
-                                        </div>
-                                        <div class="project_info">
-                                            <dt>사용 기술</dt>
-                                            <dd>
-                                                <span class="label">HTML</span>
-                                                <span class="label">SCSS</span>
-                                                <span class="label">Gulp</span>
-                                                <span class="label">Gsap</span>
-                                                <span class="label">JS</span>
-                                                <span class="label">Zeplin</span>
-                                                <span class="label">Github</span>
-                                            </dd>
-                                        </div>
-                                        <div class="project_info">
-                                            <dt>획득 역량</dt>
-                                            <dd>달력, input 등 JS 활용한 대규모 프로젝트 레이아웃 구축 </dd>
-                                        </div>
-                                    </dl>
-                                </div>
-                                <a class="btn" style="cursor:default;">내부 보안 링크</a>                       
-                            </li>
-                            <li>
-                                <h4 class="project_title">네이버 해피빈 이벤트 프로모션</h4>
-                                <div class="project_info_box">
-                                    <dl class="project_info_list">
-                                        <div class="project_info">
-                                            <dt>스펙</dt>
-                                            <dd>PC / mo 적응형</dd>
-                                        </div>
-                                        <div class="project_info">
-                                            <dt>주요 참여</dt>
-                                            <dd>30% - 공감가게 기프티카 / 가볼까 이벤트 등</dd>
-                                        </div>
-                                        <div class="project_info">
-                                            <dt>사용 기술</dt>
-                                            <dd>
-                                                <span class="label">HTML</span>
-                                                <span class="label">SCSS</span>
-                                                <span class="label">Gulp</span>
-                                                <span class="label">Zeplin</span>
-                                                <span class="label">Github</span>
-                                            </dd>
-                                        </div>
-                                        <div class="project_info">
-                                            <dt>획득 역량</dt>
-                                            <dd>대규모 공통 SCSS의 중첩선언과 방법론 등 스타일링 버전 관리</dd>
-                                        </div>
-                                    </dl>
-                                </div>
-                                <a href="https://happybean.naver.com/volunteer/event/19" target="_blank" class="btn">View the Page</a>                       
-                            </li>
-                            <li>
-                                <h4 class="project_title">네이버 클라우드</h4>
-                                <div class="project_info_box">
-                                    <dl class="project_info_list">
-                                        <div class="project_info">
-                                            <dt>스펙</dt>
-                                            <dd>반응형</dd>
-                                        </div>
-                                        <div class="project_info">
-                                            <dt>주요 참여</dt>
-                                            <dd>10% - SASS NDKS/NDKC 모듈 유지 보수</dd>
-                                        </div>
-                                        <div class="project_info">
-                                            <dt>사용 기술</dt>
-                                            <dd>
-                                                <span class="label">HTML</span>
-                                                <span class="label">SCSS</span>
-                                                <span class="label">Gulp</span>
-                                                <span class="label">Zeplin</span>
-                                                <span class="label">Github</span>
-                                            </dd>
-                                        </div>
-                                        <div class="project_info">
-                                            <dt>획득 역량</dt>
-                                            <dd>대규모 BTS flow 대응</dd>
-                                        </div>
-                                    </dl>
-                                </div>
-                                <a class="btn" style="cursor:default;">내부 보안 링크</a>                       
-                            </li>
-                            <li>
-                                <h4 class="project_title">네이버 사내 서비스</h4>
-                                <div class="project_info_box">
-                                    <dl class="project_info_list">
-                                        <div class="project_info">
-                                            <dt>스펙</dt>
-                                            <dd>-</dd>
-                                        </div>
-                                        <div class="project_info">
-                                            <dt>주요 참여</dt>
-                                            <dd>Connect(임직원 홈페이지)/급여명세서/DM 등</dd>
-                                        </div>
-                                        <div class="project_info">
-                                            <dt>사용 기술</dt>
-                                            <dd>
-                                                <span class="label">HTML</span>
-                                                <span class="label">CSS(SCSS)</span>
-                                                <span class="label">Gulp</span>
-                                                <span class="label">Zeplin</span>
-                                                <span class="label">Github</span>
-                                            </dd>
-                                        </div>
-                                        <div class="project_info">
-                                            <dt>획득 역량</dt>
-                                            <dd>구 스타일링(CSS -> SCSS,SASS 등) 및 JS 애니메이션 범용적으로 개편</dd>
-                                        </div>
-                                    </dl>
-                                </div>
-                                <a class="btn" style="cursor:default;">내부 보안 링크</a>                       
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="section_title">
-                        <h2>Team Project</h2>
-                        <p>Currently Learning</p>
-                    </div>
-                    <div class="section_content">
-                        <div class="toy_project">
-                            <span class="label">React</span>
-                            <span class="label">HTML</span>
-                            <span class="label">SCSS</span>
-                            <span class="label">JS</span> <br>
+                    <div class="cv_box">
+                        <div class="section_title">
+                            <h2>C.V.</h2>
+                            <p>Work Portfolio</p>
+                        </div>
+                        <div class="section_content">
                             <dl class="detail_list">
                                 <div class="detail_list_item">
-                                    <dt>프로젝트명</dt>
-                                    <dd> Shamagotchi(NFT Pet) &nbsp;<a href="https://shamagotchi.com/#/0867" class="link" style="display: inline-block; border-bottom: 1px solid #ddd; color: #666;">(Link)</a></dd>
+                                    <dt>이름 Name</dt>
+                                    <dd>이지혜 LEE JIHYE</dd>
                                 </div>
                                 <div class="detail_list_item">
-                                    <dt>팀원</dt>
+                                    <dt>생년월일 Birth</dt>
+                                    <dd>1996.07.12</dd>
+                                </div>
+                                <div class="detail_list_item">
+                                    <dt>이메일 Email</dt>
+                                    <dd>jiihy@naver.com</dd>
+                                </div>
+                                <div class="detail_list_item">
+                                    <dt>연락처 Phone</dt>
+                                    <dd>82)10.3549.0816</dd>
+                                </div>
+                                <div class="detail_list_item">
+                                    <dt>최종 학력 Education</dt>
                                     <dd>
-                                        3명 <br>
-                                        담당 역할 : 33.3% -  화면 풀페이지 반응형 SCSS 초기적용 및 관리 / JS애니메이션 기획 및 수정 
+                                        한성대학교 경영학부 <br>
+                                        Univ. Hansung Business
                                     </dd>
                                 </div>
                                 <div class="detail_list_item">
-                                    <dt>소개</dt>
+                                    <dt>경력사항 Experience</dt>
                                     <dd>
-                                        멈춰있는 사진뿐인 NFT에 살아있는 생명력을 부여하여 내 손안에 소유할 수 있는 샤마고치 👾 <br>
-                                        유저 고유의 NFT넘버를 링크 끝에 연결하여 각자의 고유링크를 배포하는 방식
-                                    </dd>
-                                </div>                                
-                                <div class="detail_list_item">
-                                    <dt>성과</dt>
-                                    <dd>
-                                        - 샤** NFT NYC 프로젝트 선발 <br>
-                                        - 208KLAY 수익(판매기간 4일 / 1klay=880원) <br>
-                                        - 브루클린 'Soul Night' NFT 행사장 전시 <br>
-                                        - 대기업 블록체인 어드바이저 정지훈 박사와 티타임 및 교육자료 출연<br>
-                                        - SK Enterprise 블록체인 ChainZ 방송 진출 <br>
-                                        - 브루클린 상공회의소장 Randy와 티타임에서 직접 소개 <br>
-                                        - 오설록 티하우스 아모레 성수점 전시 <br>
+                                        (주)인컴즈 21.11.08~<span class="c_gray">재직중</span>
                                     </dd>
                                 </div>
                                 <div class="detail_list_item">
-                                    <dt>프로젝트 후기</dt>
+                                    <dt>블로그 Tech Blog</dt>
                                     <dd>
-                                        <a href="https://jiihy.github.io/blog_posting/2022-07/shamagotchi" class="link" style="border-bottom: 1px solid #ddd;">구경가기!</a>
+                                        <a href="https://jiihy.github.io/blog_posting/" target="_blank" class="link">개인 기술 블로그</a>
+                                    </dd>
+                                </div>
+                                <div class="detail_list_item">
+                                    <dt>성과 Good Work</dt>
+                                    <dd>
+                                        <a href="https://jiihy.github.io/blog_posting/2022-11/md_calculator" target="_blank" class="link"> 일정 산출 계산기</a>
                                     </dd>
                                 </div>
                             </dl>
-                            <div class="iframe_box">
-                                <iframe src="https://shamagotchi.com/#/0868" frameborder="0" style="width: 100%;height: 600px;margin-top:20px;"></iframe>
-                            </div>
-                            <p style="text-align:center">직접 플레이해보세요!</p>
                         </div>
                     </div>
 
-                    <div class="section_title">
-                        <h2>Tech Blog</h2>
-                        <p>Currently Learning</p>
+                    <div class="project_box">
+                        <div class="section_title">
+                            <h2>Project List</h2>
+                            <p>Work Portfolio</p>
+                        </div>
+                        <div class="section_content">
+                            <ul class="project_list">
+                                <li>
+                                    <h4 class="project_title">네이버 웹툰 공식 홈페이지</h4>
+                                    <div class="project_info_box">
+                                        <dl class="project_info_list">
+                                            <div class="project_info">
+                                                <dt>스펙</dt>
+                                                <dd>PC / tab / mo 적응형</dd>
+                                            </div>
+                                            <div class="project_info">
+                                                <dt>주요 참여</dt>
+                                                <dd>40% - MEDIA 카테고리 신설 / CAREERS 중심 전체 마크업 관리</dd>
+                                            </div>
+                                            <div class="project_info">
+                                                <dt>사용 기술</dt>
+                                                <dd>
+                                                    <span class="label">HTML</span>
+                                                    <span class="label">SCSS</span>
+                                                    <span class="label">Gulp</span>
+                                                    <span class="label">Jquery</span>
+                                                    <span class="label">Zeplin</span>
+                                                    <span class="label">Github</span>
+                                                </dd>
+                                            </div>
+                                            <div class="project_info">
+                                                <dt>획득 역량</dt>
+                                                <dd>Include 방식의 대규모 공통 파일 버전 관리 역량 강화</dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                    
+                                    <a href="https://webtoonscorp.com/" target="_blank" class="btn">View the Page</a>                       
+                                </li>
+                                <li>
+                                    <h4 class="project_title">네이버 쇼핑 정기구독 이벤트 페이지</h4>
+                                    <div class="project_info_box">
+                                        <dl class="project_info_list">
+                                            <div class="project_info">
+                                                <dt>스펙</dt>
+                                                <dd>반응형</dd>
+                                            </div>
+                                            <div class="project_info">
+                                                <dt>주요 참여</dt>
+                                                <dd>100%</dd>
+                                            </div>
+                                            <div class="project_info">
+                                                <dt>사용 기술</dt>
+                                                <dd>
+                                                    <span class="label">HTML</span>
+                                                    <span class="label">SCSS</span>
+                                                    <span class="label">Gulp</span>
+                                                    <span class="label">Slick</span>
+                                                    <span class="label">Figma</span>
+                                                    <span class="label">Github</span>
+                                                </dd>
+                                            </div>
+                                            <div class="project_info">
+                                                <dt>획득 역량</dt>
+                                                <dd>사용자 니즈와 기획 의도 파악 및 커뮤니케이션</dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                    <a href="https://campaign.naver.com/shopping_subscribe/" target="_blank" class="btn">View the Page</a>                       
+                                </li>
+                                <li>
+                                    <h4 class="project_title">LINEPAY PayShop(TW)</h4>
+                                    <div class="project_info_box">
+                                        <dl class="project_info_list">
+                                            <div class="project_info">
+                                                <dt>스펙</dt>
+                                                <dd>PC / 대만 실서비스</dd>
+                                            </div>
+                                            <div class="project_info">
+                                                <dt>주요 참여</dt>
+                                                <dd>100%</dd>
+                                            </div>
+                                            <div class="project_info">
+                                                <dt>사용 기술</dt>
+                                                <dd>
+                                                    <span class="label">HTML</span>
+                                                    <span class="label">SCSS</span>
+                                                    <span class="label">Gulp</span>
+                                                    <span class="label">Gsap</span>
+                                                    <span class="label">JS</span>
+                                                    <span class="label">Zeplin</span>
+                                                    <span class="label">Github</span>
+                                                </dd>
+                                            </div>
+                                            <div class="project_info">
+                                                <dt>획득 역량</dt>
+                                                <dd>달력, input 등 JS 활용한 대규모 프로젝트 레이아웃 구축 </dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                    <a class="btn default">내부 보안 링크</a>                       
+                                </li>
+                                <li>
+                                    <h4 class="project_title">네이버 해피빈 이벤트 프로모션</h4>
+                                    <div class="project_info_box">
+                                        <dl class="project_info_list">
+                                            <div class="project_info">
+                                                <dt>스펙</dt>
+                                                <dd>PC / mo 적응형</dd>
+                                            </div>
+                                            <div class="project_info">
+                                                <dt>주요 참여</dt>
+                                                <dd>30% - 공감가게 기프티카 / 가볼까 이벤트 등</dd>
+                                            </div>
+                                            <div class="project_info">
+                                                <dt>사용 기술</dt>
+                                                <dd>
+                                                    <span class="label">HTML</span>
+                                                    <span class="label">SCSS</span>
+                                                    <span class="label">Gulp</span>
+                                                    <span class="label">Zeplin</span>
+                                                    <span class="label">Github</span>
+                                                </dd>
+                                            </div>
+                                            <div class="project_info">
+                                                <dt>획득 역량</dt>
+                                                <dd>대규모 공통 SCSS의 중첩선언과 방법론 등 스타일링 버전 관리</dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                    <a href="https://happybean.naver.com/volunteer/event/19" target="_blank" class="btn">View the Page</a>                       
+                                </li>
+                                <li>
+                                    <h4 class="project_title">네이버 클라우드</h4>
+                                    <div class="project_info_box">
+                                        <dl class="project_info_list">
+                                            <div class="project_info">
+                                                <dt>스펙</dt>
+                                                <dd>반응형</dd>
+                                            </div>
+                                            <div class="project_info">
+                                                <dt>주요 참여</dt>
+                                                <dd>10% - SASS NDKS/NDKC 모듈 유지 보수</dd>
+                                            </div>
+                                            <div class="project_info">
+                                                <dt>사용 기술</dt>
+                                                <dd>
+                                                    <span class="label">HTML</span>
+                                                    <span class="label">SCSS</span>
+                                                    <span class="label">Gulp</span>
+                                                    <span class="label">Zeplin</span>
+                                                    <span class="label">Github</span>
+                                                </dd>
+                                            </div>
+                                            <div class="project_info">
+                                                <dt>획득 역량</dt>
+                                                <dd>대규모 BTS flow 대응</dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                    <a class="btn default">내부 보안 링크</a>                       
+                                </li>
+                                <li>
+                                    <h4 class="project_title">네이버 사내 서비스</h4>
+                                    <div class="project_info_box">
+                                        <dl class="project_info_list">
+                                            <div class="project_info">
+                                                <dt>스펙</dt>
+                                                <dd>-</dd>
+                                            </div>
+                                            <div class="project_info">
+                                                <dt>주요 참여</dt>
+                                                <dd>Connect(임직원 홈페이지)/급여명세서/DM 등</dd>
+                                            </div>
+                                            <div class="project_info">
+                                                <dt>사용 기술</dt>
+                                                <dd>
+                                                    <span class="label">HTML</span>
+                                                    <span class="label">CSS(SCSS)</span>
+                                                    <span class="label">Gulp</span>
+                                                    <span class="label">Zeplin</span>
+                                                    <span class="label">Github</span>
+                                                </dd>
+                                            </div>
+                                            <div class="project_info">
+                                                <dt>획득 역량</dt>
+                                                <dd>구 스타일링(CSS -> SCSS,SASS 등) 및 JS 애니메이션 범용적으로 개편</dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                    <a class="btn default">내부 보안 링크</a>                       
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="section_content">
-                        <div class="tech_list">
-                            <div class="tech_link">
-                                <a href="https://jiihy.github.io/blog_posting/" target="_blank" class="link">끄적끄적... Tech Blog 바로가기</a>
+
+                    <div class="team_box">
+                        <div class="section_title">
+                            <h2>Team Project</h2>
+                            <p>Currently Learning</p>
+                        </div>
+                        <div class="section_content">
+                            <div class="toy_project">
+                                <span class="label">React</span>
+                                <span class="label">HTML</span>
+                                <span class="label">SCSS</span>
+                                <span class="label">JS</span> <br>
+                                <dl class="detail_list">
+                                    <div class="detail_list_item">
+                                        <dt>프로젝트명</dt>
+                                        <dd> Shamagotchi(NFT Pet) &nbsp;<a href="https://shamagotchi.com/#/0867" class="link" target="_blank">(Link)</a></dd>
+                                    </div>
+                                    <div class="detail_list_item">
+                                        <dt>팀원</dt>
+                                        <dd>
+                                            3명 <br>
+                                            담당 역할 : 33.3% -  화면 풀페이지 반응형 SCSS 초기적용 및 관리 / JS애니메이션 기획 및 수정 
+                                        </dd>
+                                    </div>
+                                    <div class="detail_list_item">
+                                        <dt>소개</dt>
+                                        <dd>
+                                            멈춰있는 사진뿐인 NFT에 살아있는 생명력을 부여하여 내 손안에 소유할 수 있는 샤마고치 👾 <br>
+                                            유저 고유의 NFT넘버를 링크 끝에 연결하여 각자의 고유링크를 배포하는 방식
+                                        </dd>
+                                    </div>                                
+                                    <div class="detail_list_item">
+                                        <dt>성과</dt>
+                                        <dd>
+                                            - 샤** NFT NYC 프로젝트 선발 <br>
+                                            - 208KLAY 수익(판매기간 4일 / 1klay=880원) <br>
+                                            - 브루클린 'Soul Night' NFT 행사장 전시 <br>
+                                            - 대기업 블록체인 어드바이저 정지훈 박사와 티타임 및 교육자료 출연<br>
+                                            - SK Enterprise 블록체인 ChainZ 방송 진출 <br>
+                                            - 브루클린 상공회의소장 Randy와 티타임에서 직접 소개 <br>
+                                            - 오설록 티하우스 아모레 성수점 전시 <br>
+                                        </dd>
+                                    </div>
+                                    <div class="detail_list_item">
+                                        <dt>프로젝트 후기</dt>
+                                        <dd>
+                                            <a href="https://jiihy.github.io/blog_posting/2022-07/shamagotchi" class="link" target="_blank">구경가기!</a>
+                                        </dd>
+                                    </div>
+                                </dl>
+                                <div class="iframe_box">
+                                    <span class="blind">샤마고치 게임기 삽입</span>
+                                    <iframe src="https://shamagotchi.com/#/0867"></iframe>
+                                </div>
+                                <p>직접 플레이해보세요!</p>
                             </div>
-                            <strong>📚 Tech Stacks </strong>
-                            <div>
-                                <img src="https://img.shields.io/badge/VS Code-3D2C8D?style=for-the-badge&logo=Visual Studio Code&logoColor=white">
-                                <img src="https://img.shields.io/badge/Git-3D2C8D?style=for-the-badge&logo=GitHub&logoColor=white">
-                                <img src="https://img.shields.io/badge/Sourcetree-3D2C8D?style=for-the-badge&logo=Sourcetree&logoColor=white">
-                            </div>
-                        
-                            <div>
-                                <img src="https://img.shields.io/badge/HTML5-916BBF?style=for-the-badge&logo=HTML5&logoColor=white">
-                                <img src="https://img.shields.io/badge/CSS3-916BBF?style=for-the-badge&logo=CSS3&logoColor=white">
-                                <img src="https://img.shields.io/badge/Sass/Scss-916BBF?style=for-the-badge&logo=Sass&logoColor=white">
-                                <img src="https://img.shields.io/badge/gulp-C996CC?style=for-the-badge&logo=gulp&logoColor=white">
-                            </div>
-                        
-                            <div>
-                                <img src="https://img.shields.io/badge/jQuery-C996CC?style=for-the-badge&logo=jQuery&logoColor=white">
-                                <img src="https://img.shields.io/badge/JavaScript(ES3)-1C0C5B?style=for-the-badge&logo=JavaScript&logoColor=white">
-                            </div>
-                            <br>
-                            <strong> ✏️ Currently Learning </strong>
-                            <div>
-                                <img src="https://img.shields.io/badge/JavaScript(ES6)-1C0C5B?style=for-the-badge&logo=JavaScript&logoColor=white">
-                                <img src="https://img.shields.io/badge/React-1C0C5B?style=for-the-badge&logo=React&logoColor=white">
-                                <img src="https://img.shields.io/badge/Vue.js-1C0C5B?style=for-the-badge&logo=Vue.js&logoColor=white">
-                                <img src="https://img.shields.io/badge/TypeScript-1C0C5B?style=for-the-badge&logo=TypeScript&logoColor=white">
-                            </div>
-                            <br>
-                        
-                            <strong> 🍵 Cowork Tools </strong>
-                            
-                            <div>
-                                <img src="https://img.shields.io/badge/GitHub-3D2C8D?style=for-the-badge&logo=GitHub&logoColor=white">
-                                <img src="https://img.shields.io/badge/GitLab-3D2C8D?style=for-the-badge&logo=GitLab&logoColor=white">
-                                <img src="https://img.shields.io/badge/works-916BBF?style=for-the-badge&logo=Naver&logoColor=white"> 
-                            </div>
-                            
-                            <div>
-                                <img src="https://img.shields.io/badge/zeplin-916BBF?style=for-the-badge&logo=zeplin&logoColor=white">
-                                <img src="https://img.shields.io/badge/Figma-916BBF?style=for-the-badge&logo=Figma&logoColor=white">
-                                <img src="https://img.shields.io/badge/Photoshop-916BBF?style=for-the-badge&logo=Adobe Photoshop&logoColor=white">
-                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog_box">
+                        <div class="section_title">
+                            <h2>Tech Blog</h2>
+                            <p>Currently Learning</p>
+                        </div>
+                        <div class="section_content">
+                            <ul class="tech_list">
+                                <li>
+                                    <a href="https://jiihy.github.io/blog_posting/" target="_blank" class="link">끄적끄적... Tech Blog 바로가기</a>
+                                </li>
+                                <li>
+                                    <strong>📚 Tech Stacks </strong>
+                                    <div>
+                                        <img src="https://img.shields.io/badge/VSCode-3D2C8D?style=for-the-badge&logo=VisualStudioCode&logoColor=white" alt="visual studio code icon">
+                                        <img src="https://img.shields.io/badge/Git-3D2C8D?style=for-the-badge&logo=GitHub&logoColor=white" alt="Github icon">
+                                        <img src="https://img.shields.io/badge/Sourcetree-3D2C8D?style=for-the-badge&logo=Sourcetree&logoColor=white" alt="sourcetree icon">
+                                    </div>
+                                    <div>
+                                        <img src="https://img.shields.io/badge/HTML5-916BBF?style=for-the-badge&logo=HTML5&logoColor=white" alt="HTML5 icon">
+                                        <img src="https://img.shields.io/badge/CSS3-916BBF?style=for-the-badge&logo=CSS3&logoColor=white" alt="CSS3 icon">
+                                        <img src="https://img.shields.io/badge/Sass/Scss-916BBF?style=for-the-badge&logo=Sass&logoColor=white" alt="Sass icon">
+                                        <img src="https://img.shields.io/badge/gulp-C996CC?style=for-the-badge&logo=gulp&logoColor=white" alt="gulp icon">
+                                    </div>
+                                    <div>
+                                        <img src="https://img.shields.io/badge/jQuery-C996CC?style=for-the-badge&logo=jQuery&logoColor=white" alt="jquery icon">
+                                        <img src="https://img.shields.io/badge/JavaScript(ES3)-1C0C5B?style=for-the-badge&logo=JavaScript&logoColor=white" alt="JS icon">
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <strong> ✏️ Currently Learning </strong>
+                                    <div>
+                                        <img src="https://img.shields.io/badge/JavaScript(ES6)-1C0C5B?style=for-the-badge&logo=JavaScript&logoColor=white" alt="JS icon">
+                                        <img src="https://img.shields.io/badge/React-1C0C5B?style=for-the-badge&logo=React&logoColor=white" alt="React icon">
+                                        <img src="https://img.shields.io/badge/Vue.js-1C0C5B?style=for-the-badge&logo=Vue.js&logoColor=white" alt="Vue icon">
+                                        <img src="https://img.shields.io/badge/TypeScript-1C0C5B?style=for-the-badge&logo=TypeScript&logoColor=white" alt="Typescript icon">
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <strong> 🍵 Cowork Tools </strong>
+                                    <div class="div">
+                                        <img src="https://img.shields.io/badge/GitHub-3D2C8D?style=for-the-badge&logo=GitHub&logoColor=white" alt="Github icon">
+                                        <img src="https://img.shields.io/badge/GitLab-3D2C8D?style=for-the-badge&logo=GitLab&logoColor=white" alt="Gitlab icon">
+                                        <img src="https://img.shields.io/badge/works-916BBF?style=for-the-badge&logo=Naver&logoColor=white" alt="Nworks icon"> 
+                                    </div>
+                                    <div>
+                                        <img src="https://img.shields.io/badge/zeplin-916BBF?style=for-the-badge&logo=zeplin&logoColor=white" alt="Zeplin icon">
+                                        <img src="https://img.shields.io/badge/Figma-916BBF?style=for-the-badge&logo=Figma&logoColor=white" alt="Figma icon">
+                                        <img src="https://img.shields.io/badge/Photoshop-916BBF?style=for-the-badge&logo=AdobePhotoshop&logoColor=white" alt="Photoshop icon">
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -451,9 +458,10 @@
         </div>
         <!-- //container -->
     </div> 
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.js"></script>
+    <script src="js/spot_bg.js"></script>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.js"></script>
-<script type="text/javascript" src="js/spot_bg.js"></script>
 </html>

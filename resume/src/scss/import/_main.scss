@@ -42,8 +42,9 @@
     }
 }
 
-// VI
 
+
+// cv
 .detail_list {
     margin-top: 22px;
     font-size: 14px;
@@ -69,19 +70,6 @@
     dd {
         display: table-cell;
         color: #000;
-    }
-
-    .inputbox {
-        width: 231px;
-    }
-
-    .emph {
-        font-size: 15px;
-        &_line {
-            color: #949494;
-            text-decoration: line-through;
-        
-        }
     }
 }
 
@@ -124,10 +112,15 @@
             background-color: #937DC2;
             @include radius(3px);
             color: #fff;
+
+            &.default{
+                cursor: default;
+            }
+
             @include mobile{
                 bottom: 40px;
                 width: calc(100% - 70px);
-            }    
+            }
         }
     }
     @include tab{
@@ -147,16 +140,6 @@
         @include mobile{
             font-size: 15px;
         }
-    }
-
-    .sub_text {
-        font-weight: normal;
-    }
-
-    .project_subtitle {
-        margin-top: 4px;
-        font-size: 14px;
-        line-height: 1.36;
     }
 
     .project_info_box {
@@ -202,6 +185,9 @@
 
 // tech list
 .tech_list{
+    li+li{
+        margin-top: 8px;
+    }
     @include mobile{
         font-size: 15px;
     }
@@ -213,9 +199,6 @@
         margin: 1px;
     }
 
-    .tech_link{
-        margin: 0 0 8px;
-    }
     a {
         display: inline-block;
         border-bottom: 1px solid #ddd;
@@ -239,5 +222,21 @@
         @include mobile{
             width: 120px;
         }
+    }
+    .link{
+        display: inline-block;
+    }
+    .iframe_box{
+        width: 80%;
+        height: 500px;
+        margin: 40px auto 30px;
+        iframe{
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    }
+    p{
+        text-align: center;
     }
 }
