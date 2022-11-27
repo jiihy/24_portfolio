@@ -31,6 +31,11 @@
 	src: local("NanumSquareEB"), url("../fonts/NanumSquareEB.eot?#iefix") format("embedded-opentype"), url("../fonts/NanumSquareEB.woff") format("woff"), url("../fonts/NanumSquareEB.ttf") format("truetype");
 }
 
+
+.fp-tableCell {
+        overflow: hidden;
+}
+
 body,
 h1, h2, h3, h4, h5, h6,
 ul, ol, dl, dd, input {
@@ -1804,7 +1809,7 @@ body {
 
 @media (max-width: 767px) {
 	.toy_project dt {
-		width: 120px;
+		width: 90px;
 	}
 }
 
