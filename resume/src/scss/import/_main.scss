@@ -220,7 +220,8 @@
         padding-right: 50px;
         color: #555;
         @include mobile{
-            width: 120px;
+            width: 90px;
+            padding-right: 20px;
         }
     }
     .link{
