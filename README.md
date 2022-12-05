@@ -3,7 +3,7 @@
  ![header](https://capsule-render.vercel.app/api?type=waving&color=0:ffe45c,100:d5adff&text=Hi%20there%20!&animation=twinkling&fontColor=fff&stroke=003268)
 
  super fast turtle :turtle: <br>
- <img src="https://img.shields.io/badge/UIUX Developer-03C75A?style=for-the-badge&logo=Naver&logoColor=white">
+ <img src="https://img.shields.io/badge/UX Developer-03C75A?style=for-the-badge&logo=Naver&logoColor=white">
  <br>
 
  <h3>:books: Tech Stacks </h3>
